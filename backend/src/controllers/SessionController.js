@@ -1,6 +1,11 @@
+//Importes necessários
 const connection = require('../database/connection');
-
+/**
+ * Métodos da sessão
+ */
 module.exports = {
+
+    // método de login
     async create(req, res){
         const {id} = req.body;
 

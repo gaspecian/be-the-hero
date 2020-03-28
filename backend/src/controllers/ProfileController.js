@@ -1,6 +1,11 @@
-const connection = require('../database/connection')
-
+//Importes necessários
+const connection = require('../database/connection');
+/**
+ * Métodos do profile
+ */
 module.exports = {
+
+    // método de listagem de incidents com um ong_id
     async index(req, response){
         const ong_id = req.headers.authorization;
 

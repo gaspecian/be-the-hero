@@ -1,31 +1,19 @@
-/**
- * Imports necessários
- */
+//Imports necessários
 const express = require("express");
 const cors = require('cors');
 const routes = require("./routes");
 
-/**
- * Instância app
- */
+ //Instância app
 const app = express();
 
-/**
- * configuração de sergurança cors
- */
+//configuração de sergurança cors
 app.use(cors());
 
-/**
- * Define linguagem json como linguagem de requisições
- */
+//Define linguagem json como linguagem de requisições
 app.use(express.json())
 
-/**
- * Rotas
- */
+// Rotas
 app.use(routes);
 
-/**
- * Cria server na porta 3333
- */
+// cria server na porta 3333
 app.listen(3333);
